@@ -1,3 +1,23 @@
+## Installation
+
+Clone this repon and in the cloned root dir run:
+
+```bash
+make
+make RDM.app
+mv RDM.app /Application/
+```
+
+For ARM architecture before running above commmands change:
+
+```
+# File: Makefile
+# Replace line 10 with
+ARCH_FLAGS=-arch arm64
+```
+
+---
+
 This is a tool that lets you use MacBook Pro Retina's highest and unsupported resolutions.
 As an example, a Retina MacBook Pro 13" can be set to 3360×2100 maximum resolution, as
 opposed to Apple's max supported 1680×1050. It is accessible from the menu bar.
@@ -17,5 +37,4 @@ added support for easy installable package (PKG, DMG) and improved the way menu 
 displayed. I don't know what is the license by its authors because it came 100%
 uncommented and undocumented. But I'm sure they would enjoy you to freely use it. Me too.
 
-Want installable binary package? [It is here](http://avi.alkalay.net/software/RDM/).
 
